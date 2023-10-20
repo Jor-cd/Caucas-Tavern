@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+    width: 100%;
+    height: auto;
+    background-image: url(layout-background.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    padding-inline: 40px;
+}
+
+.num-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #b29d86;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.num-text-bottom {
+    width: 100%;
+    height: 4px;
+    background-color: #b29d86;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+
+.header-left-block:hover .num-text {
+    color: #353535;
+}
+
+.header-left-block:hover .num-text-bottom {
+    background-color: #353535;
+
+}
+
+.header-right-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.flag-block {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin-top: 80px;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.flag {
+    width: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.flag-dropdown-menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3;
+    top: 90px;
+}
+
+.flag-block:hover+.flag-dropdown-menu {
+    display: flex;
+    z-index: 3;
+}
+
+.flag-dropdown-menu:hover {
+    display: flex;
+    z-index: 3;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    padding-inline: 500px;
+}
+
+.navbar-text-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-text {
+    font-size: 16px;
+    color: #353535;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar-text:hover {
+    color: #b29d86;
+}
+
+.navbar-hover-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.navbar-hover-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.navbar-dropdown-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 38px;
+    flex-direction: column;
+    width: 236px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    padding-inline: 10px;
+    transition: all 0.3s;
+    z-index: 3;
+}
+
+.navbar-dropdown-text {
+    font-size: 12px;
+    font-family: 'Lato VH Custom';
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+    z-index: 3;
+}
+
+.restaurants {
+    width: 270px;
+}
+
+.navbar-hover-top:hover+.navbar-dropdown-menu {
+    display: flex;
+    z-index: 3;
+}
+
+.navbar-dropdown-menu:hover {
+    display: flex;
+    opacity: 1;
+    z-index: 3;
+}
+
+.navbar-dropdown-text:hover {
+    color: #959595 !important;
+    z-index: 3;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+.title-background {
+    position: relative;
+    width: 100%;
+    background-image: url(https://static.ucraft.net/fs/ucraft/userFiles/caucasuscomplex/images/r938-2-hotel-pandok.jpg?v=1583744519);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.decoration-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.decoration {
+    position: absolute;
+    width: 850px;
+    top: 100px;
+}
+
+.title {
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    top: 400px;
+    left: 270px;
+    letter-spacing: 4px;
+}
+
+.discription-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 1000px;
+    padding-inline: 240px;
+}
+
+.first-discription-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+}
+
+.first-discription-img {
+    width: 60%;
+}
+
+.discription-text-block {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-inline: 100px;
+}
+
+.first-discription-text {
+    font-size: 15px;
+    font-family: 'Lato VH Custom';
+    line-height: 1.4;
+}
+
+.fa-bars {
+    opacity: 0;
+    font-size: 20px;
+    color: #353535;
+}
+
+.navbar-info-container {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50px;
+    z-index: 5;
+    transition: 0.4s;
+}
+
+.fa-bars:hover + .navbar-info-container {
+    display: flex;
+    right: 0;
+}
+
+.navbar-info-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.white-text {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    font-size: 28px;
+}
